@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"os"
 
-	"xorm.io/core"
 	"xorm.io/xorm"
+	"xorm.io/xorm/log"
 )
 
 var CmdSource = &Command{
@@ -42,7 +42,7 @@ func runSource(cmd *Command, args []string) {
 	}
 
 	engine.ShowSQL(false)
-	engine.Logger().SetLevel(core.LOG_UNKNOWN)
+	engine.Logger().SetLevel(log.LOG_UNKNOWN)
 
 	err = engine.Ping()
 	if err != nil {

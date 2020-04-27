@@ -3,6 +3,8 @@
 
 # xorm tools
 
+**Please use `reverse` to instead of this tool.**
+
 xorm tools is a set of  tools for database operation. 
 
 ## Source Install
