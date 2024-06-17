@@ -334,7 +334,7 @@ func eTag(col *core.Column) string {
 			res = append(res, "deleted")
 		}
 	} else if col.Default != "" {
-		res = append(res, "default:"+col.Default)
+		res = append(res, "default "+col.Default)
 	}
 
 	if len(res) > 0 {
