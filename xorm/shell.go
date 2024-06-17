@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/bailuoyu/xorm"
+	"github.com/runkits/xorm"
 	"xorm.io/core"
 )
 

@@ -1,5 +1,5 @@
 
-[中文](https://github.com/bailuoyu/xorm-cmd/blob/master/README_CN.md)
+[中文](https://github.com/runkits/xorm/blob/master/README_CN.md)
 
 # xorm tools
 
@@ -7,11 +7,11 @@ xorm tools is a set of  tools for database operation.
 
 ## Source Install
 
-`go get github.com/bailuoyu/xorm-cmd/xorm`
+`go get github.com/runkits/xorm/xorm`
 
 and you should install the depends below:
 
-* github.com/bailuoyu/xorm
+* github.com/runkits/xorm
 
 * Mysql: [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql)
 
@@ -45,7 +45,7 @@ to get help
 
 example:
 
-`cd $GOPATH/src/github.com/bailuoyu/xorm-cmd/xorm`
+`cd $GOPATH/src/github.com/runkits/xorm/xorm`
 
 sqlite:
 `xorm reverse sqite3 test.db templates/goxorm`

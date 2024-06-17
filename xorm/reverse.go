@@ -16,8 +16,8 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/bailuoyu/xorm"
 	"github.com/lunny/log"
+	"github.com/runkits/xorm"
 	"xorm.io/core"
 
 	_ "github.com/denisenkom/go-mssqldb"
