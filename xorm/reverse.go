@@ -7,7 +7,7 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"os"
 	"path"
 	"path/filepath"
@@ -17,8 +17,8 @@ import (
 	"text/template"
 
 	"github.com/lunny/log"
-	"xorm.io/xorm"
-	"xorm.io/xorm/schemas"
+	"github.com/xlstudio/xorm"
+	"github.com/xlstudio/xorm/schemas"
 
 	_ "github.com/denisenkom/go-mssqldb"
 	_ "github.com/go-sql-driver/mysql"
@@ -51,6 +51,8 @@ func init() {
 }
 
 var (
+	lang                                         string   = "go"
+	prefix                                       string   = "" //[SWH|+]
 	genJson                                      bool     = false
 	ignoreColumnsJSON, created, updated, deleted []string = []string{}, []string{"created_at"}, []string{"updated_at"}, []string{"deleted_at"}
 )
@@ -138,8 +140,6 @@ func runReverse(cmd *Command, args []string) {
 
 	var langTmpl LangTmpl
 	var ok bool
-	var lang string = "go"
-	var prefix string = "" //[SWH|+]
 
 	cfgPath := path.Join(dir, "config")
 	info, err := os.Stat(cfgPath)
@@ -216,7 +216,7 @@ func runReverse(cmd *Command, args []string) {
 			return nil
 		}
 
-		bs, err := ioutil.ReadFile(f)
+		bs, err := os.ReadFile(f)
 		if err != nil {
 			log.Errorf("%v", err)
 			return err
@@ -263,7 +263,7 @@ func runReverse(cmd *Command, args []string) {
 				return err
 			}
 
-			tplcontent, err := ioutil.ReadAll(newbytes)
+			tplcontent, err := io.ReadAll(newbytes)
 			if err != nil {
 				log.Errorf("%v", err)
 				return err
@@ -307,7 +307,7 @@ func runReverse(cmd *Command, args []string) {
 					return err
 				}
 
-				tplcontent, err := ioutil.ReadAll(newbytes)
+				tplcontent, err := io.ReadAll(newbytes)
 				if err != nil {
 					log.Errorf("%v", err)
 					return err

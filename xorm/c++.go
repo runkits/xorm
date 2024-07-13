@@ -8,7 +8,7 @@ import (
 	"strings"
 	"text/template"
 
-	"xorm.io/xorm/schemas"
+	"github.com/xlstudio/xorm/schemas"
 )
 
 var (

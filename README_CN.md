@@ -7,11 +7,11 @@ xorm 是一组数据库操作命令行工具。
 
 ## 源码安装
 
-`go get xorm.io/cmd/xorm`
+`go install github.com/runkits/xorm/xorm@lastest`
 
 执行以上命令会安装如下依赖:
 
-* xorm.io/xorm
+* github.com/xlstudio/xorm
 
 * Mysql: [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql)
 
@@ -47,7 +47,7 @@ Reverse 命令让你根据数据库的表来生成结构体或者类代码文件
 
 首先要进入到当前项目的目录下，主要是后面的命令最后一个参数中用到的模版存放在当前项目的目录下
 
-`cd $GOPATH/src/github.com/go-xorm/cmd/xorm`
+`cd $GOPATH/src/github.com/runkits/xorm/xorm`
 
 sqlite:
 `xorm reverse sqite3 test.db templates/goxorm`

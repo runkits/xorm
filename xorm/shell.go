@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"strings"
 
-	"xorm.io/xorm"
-	"xorm.io/xorm/log"
+	"github.com/xlstudio/xorm"
+	"github.com/xlstudio/xorm/log"
 )
 
 var CmdShell = &Command{

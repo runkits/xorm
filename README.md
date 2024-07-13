@@ -9,11 +9,11 @@ xorm tools is a set of  tools for database operation.
 
 ## Source Install
 
-`go get xorm.io/cmd/xorm`
+`go install github.com/runkits/xorm/xorm@lastest`
 
 and you will install the depends below:
 
-* xorm.io/xorm
+* github.com/xlstudio/xorm
 
 * Mysql: [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql)
 
@@ -47,7 +47,7 @@ to get help
 
 example:
 
-`cd $GOPATH/src/github.com/go-xorm/cmd/xorm`
+`cd $GOPATH/src/github.com/runkits/xorm/xorm`
 
 sqlite:
 `xorm reverse sqite3 test.db templates/goxorm`

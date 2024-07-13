@@ -5,12 +5,12 @@
 package main
 
 import (
-	"io/ioutil"
+	"os"
 	"strings"
 	"text/template"
 
-	"xorm.io/xorm/names"
-	"xorm.io/xorm/schemas"
+	"github.com/xlstudio/xorm/names"
+	"github.com/xlstudio/xorm/schemas"
 )
 
 type LangTmpl struct {
@@ -29,7 +29,7 @@ var (
 )
 
 func loadConfig(f string) map[string]string {
-	bts, err := ioutil.ReadFile(f)
+	bts, err := os.ReadFile(f)
 	if err != nil {
 		return nil
 	}

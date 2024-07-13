@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"os"
 
-	"xorm.io/xorm"
-	"xorm.io/xorm/log"
+	"github.com/xlstudio/xorm"
+	"github.com/xlstudio/xorm/log"
 )
 
 var CmdSource = &Command{
