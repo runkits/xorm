@@ -1,11 +1,8 @@
-
-[中文](https://gitea.com/xorm/cmd/blob/master/README_CN.md)
+[中文](./README_CN.md)
 
 # xorm tools
 
-**Please use `reverse` to instead of this tool.**
-
-xorm tools is a set of  tools for database operation. 
+xorm tools is a set of  tools for database operation.
 
 ## Source Install
 
@@ -14,15 +11,10 @@ xorm tools is a set of  tools for database operation.
 and you will install the depends below:
 
 * github.com/xlstudio/xorm
-
 * Mysql: [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql)
-
 * MyMysql: [github.com/ziutek/mymysql/godrv](https://github.com/ziutek/mymysql/godrv)
-
 * Postgres: [github.com/lib/pq](https://github.com/lib/pq)
-
-* SQLite: [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3) 
-
+* SQLite: [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3)
 * MSSQL: [github.com/denisenkom/go-mssqldb](https://github.com/denisenkom/go-mssqldb)
 
 ** For sqlite support, you need build via `go build -tags sqlite3` because of this driver ask cgo.
@@ -39,7 +31,7 @@ All the commands below.
 
 ## Reverse
 
-Reverse command is a tool to convert your database struct to all kinds languages of structs or classes. After you installed the tool, you can type 
+Reverse command is a tool to convert your database struct to all kinds languages of structs or classes. After you installed the tool, you can type
 
 `xorm help reverse`
 

@@ -1,9 +1,8 @@
-
-[English](https://gitea.com/xorm/cmd/blob/master/README.md)
+[English](./README.md)
 
 # xorm 工具
 
-xorm 是一组数据库操作命令行工具。 
+xorm 是一组数据库操作命令行工具。
 
 ## 源码安装
 
@@ -12,15 +11,10 @@ xorm 是一组数据库操作命令行工具。
 执行以上命令会安装如下依赖:
 
 * github.com/xlstudio/xorm
-
 * Mysql: [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql)
-
 * MyMysql: [github.com/ziutek/mymysql/godrv](https://github.com/ziutek/mymysql/godrv)
-
 * Postgres: [github.com/lib/pq](https://github.com/lib/pq)
-
-* SQLite: [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3) 
-
+* SQLite: [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3)
 * MSSQL: [github.com/denisenkom/go-mssqldb](https://github.com/denisenkom/go-mssqldb)
 
 ** 对于sqlite3的支持，你需要自己进行编译 `go build -tags sqlite3` 因为sqlite3需要cgo的支持。
